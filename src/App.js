@@ -10,6 +10,7 @@ import Profile from './components/pages/Profile'
 import './styles/style.css'
 import CompleteRegister from './components/pages/CompleteRegister'
 import Loading from './components/ui/Loading';
+import Footer from './components/ui/Footer';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'react-toastify/dist/ReactToastify.css';
 
@@ -37,7 +38,7 @@ function App() {
           if(doc.exists){
             setUserPackage({user: authUser, data: doc.data()})
             setLoading(false)
-          }else{
+          } else {
             setLoading(false)
             if(window.location.href != "http://localhost:3000/completeregister") {
               window.location.href = "http://localhost:3000/completeregister"
@@ -90,7 +91,7 @@ function App() {
                 
                     </Switch>
                   </main>
-                  
+                  <Footer/>
                 </>
               )}
             </UserContext.Provider>

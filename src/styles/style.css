@@ -1,5 +1,14 @@
+.App{
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
 .App *{
   font-family: 'Roboto', 'Tajawal', sans-serif;
+}
+
+main {
+  flex: 1 0 auto;
 }
 
 .googlesignin{

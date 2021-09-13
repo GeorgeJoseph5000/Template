@@ -1,6 +1,6 @@
 import React, { useContext } from 'react'
 import { LangContext } from '../../App'
-
+import { Button } from 'react-bootstrap'
 
 
 export default function Footer() {
@@ -11,35 +11,158 @@ export default function Footer() {
         if(lang == "en"){
             changeLang("ar")
         }else{
-            changeLang("en")
+            changeLang("en")  
         }
     }
 
     return (
-        <footer className="page-footer blue">
-            <div className="container">
+        <footer className="bg-dark text-center text-white">
+            <div className="container p-4">
+                <section className="mb-4">
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-facebook-f"></i
+                ></a>
+
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-twitter"></i
+                ></a>
+
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-google"></i
+                ></a>
+
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-instagram"></i
+                ></a>
+
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-linkedin-in"></i
+                ></a>
+
+                <a className="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+                    ><i className="fab fa-github"></i
+                ></a>
+                </section>
+
+                <section className="">
+                <form action="">
+                    <div className="row d-flex justify-content-center">
+                    <div className="col-auto">
+                        <p className="pt-2">
+                        <strong>Sign up for our newsletter</strong>
+                        </p>
+                    </div>
+
+                    <div className="col-md-5 col-12">
+                        <div className="form-outline form-white mb-4">
+                        <input type="email" id="form5Example2" className="form-control" />
+                        <label className="form-label" for="form5Example2">Email address</label>
+                        </div>
+                    </div>
+
+                    <div className="col-auto">
+                        <button type="submit" className="btn btn-outline-light mb-4">
+                        Subscribe
+                        </button>
+                    </div>
+                    </div>
+                </form>
+                </section>
+
+                <section className="mb-4">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt distinctio earum
+                    repellat quaerat voluptatibus placeat nam, commodi optio pariatur est quia magnam
+                    eum harum corrupti dicta, aliquam sequi voluptate quas.
+                </p>
+                <Button onClick={toggleLang}>{lang == "en" ? "عربي" : "English"}</Button>
+                </section>
+
+                <section className="">
                 <div className="row">
-                <div className="col l6 s12">
-                    <h5 className="white-text">Footer Content</h5>
-                    <p className="grey-text text-lighten-4">You can use rows and columns here to organize your footer content.</p>
-                    <button className="btn waves-effect" onClick={toggleLang} style={{fontSize: "20px"}}>{lang == "ar" ? "English" : "عربي"}</button>
-                </div>
-                <div className="col l4 offset-l2 s12">
-                    <h5 className="white-text">Links</h5>
-                    <ul>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a className="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Links</h5>
+
+                    <ul className="list-unstyled mb-0">
+                        <li>
+                        <a href="#!" className="text-white">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 4</a>
+                        </li>
                     </ul>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Links</h5>
+
+                    <ul className="list-unstyled mb-0">
+                        <li>
+                        <a href="#!" className="text-white">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Links</h5>
+
+                    <ul className="list-unstyled mb-0">
+                        <li>
+                        <a href="#!" className="text-white">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                    </div>
+
+                    
+                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 className="text-uppercase">Links</h5>
+
+                    <ul className="list-unstyled mb-0">
+                        <li>
+                        <a href="#!" className="text-white">Link 1</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 2</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 3</a>
+                        </li>
+                        <li>
+                        <a href="#!" className="text-white">Link 4</a>
+                        </li>
+                    </ul>
+                    </div>
                 </div>
-                </div>
+                </section>
             </div>
-            <div className="footer-copyright">
-                <div className="container">
-                © 2021 Copyright Text
-                <a className="grey-text text-lighten-4 right" href="#!">More Links</a>
-                </div>
+
+            <div className="text-center p-3" style={{backgroundColor: "rgba(0, 0, 0, 0.2)"}}>
+                © 2020 Copyright:
+                <a className="text-white" href="https://mdbootstrap.com/">MDBootstrap.com</a>
             </div>
         </footer>
     )
